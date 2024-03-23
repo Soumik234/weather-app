@@ -3,7 +3,7 @@ import { DateTime } from "luxon";
 const API_KEY = "ljdI1OGrX3hQCDNbyLtVxoCvGLmZZLfl";
 
 const getLocationKey = async (cityName) => {
-  const base = "http://dataservice.accuweather.com/locations/v1/cities/search";
+  const base = "https://dataservice.accuweather.com/locations/v1/cities/search";
   const query = `?apikey=${API_KEY}&q=${cityName}`;
 
   const response = await fetch(base + query);
