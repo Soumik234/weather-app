@@ -38,7 +38,7 @@ const formatToCCC = (dateTimeString, zone) => {
 };
 
 const getHourly = async (locationKey) => {
-  const base = `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}`;
+  const base = `https://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}`;
   const query = `?apikey=${API_KEY}`;
 
   try {
@@ -56,7 +56,7 @@ const getHourly = async (locationKey) => {
 };
 
 const getDaily = async (locationKey) => {
-  const base = `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${locationKey}`;
+  const base = `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${locationKey}`;
   const query = `?apikey=${API_KEY}`;
 
   try {
