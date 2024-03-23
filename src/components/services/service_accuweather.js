@@ -47,7 +47,7 @@ const getHourly = async (locationKey) => {
       throw new Error("Request failed with status: " + response.status);
     }
     const data = await response.json();
-    console.log(data);
+   
 
     return data;
   } catch (error) {
@@ -65,7 +65,7 @@ const getDaily = async (locationKey) => {
       throw new Error("Request failed with status: " + response.status);
     }
     const data = await response.json();
-    console.log(data);
+    
     return data.DailyForecasts;
   } catch (error) {
     console.error("Error fetching daily data:", error);

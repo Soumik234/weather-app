@@ -44,7 +44,7 @@ function App() {
     const fetchWeather = async () => {
       try {
         const locationKey = await getLocationKey(query.q);
-        console.log("Location Key:", locationKey);
+        
 
         const hourlyData = await getHourly(locationKey);
         setHourlyForecast(hourlyData);
